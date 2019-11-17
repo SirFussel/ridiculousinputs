@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS import -->
+    <link type="text/css" rel="stylesheet" href="bootstrap-4.3.1/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="/stylesheets/style.css">
+
+    <title>Home</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Welcome</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#stepwise-ref">Stepwise</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#slider-ref">Slider</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#random-ref">Random</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="item">
+      <p class="h5" id="stepwise-ref">Stepwise</p>
+      <label for="phone-stepwise">Please enter your phone number:</label>
+      <form method="get">
+        +49 <input id="stepwise" type="number" name="phone-stepwise" value="1231234567" max="9999999999" min="1111111111" title="Please use the arrow keys on the right."> <br /> <br />
+        <input type="submit">
+      </form>
+    </div>
+
+    <div class="item">
+      <p class="h5" id="slider-ref">Slider</p>
+      <label for="phone-slider">Please enter your phone number:</label>
+      <form method="get">
+        <input type="range" id="slider" max="9999999999" min="1111111111" value="1231234567"> <br /> <br />
+        +49 <input id="slider-value" type="number" name="phone-slider" value="1231234567" readonly title="Please use the slider above."> <br /> <br />
+        <input type="submit">
+      </form>
+    </div>
+
+    <div class="item">
+      <p class="h5" id="random-ref">Random</p>
+      <label for="phone-random">Please roll your phone number:</label>
+      <form method="get">
+        +49 <input id="random" type="number" name="phone-random" value="1231234567" readonly title="Please use the slider above."> <button type="button" onclick="roll()">Roll</button> <br /> <br />
+        <input type="submit">
+      </form>
+    </div>
+
+    <!-- JavaScript imports -->
+    <script type="text/javascript" src="javascripts/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="javascripts/popper.js-1.16.0.js"></script>
+    <script type="text/javascript" src="bootstrap-4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="javascripts/functions.js"></script>
+  </body>
+</html>
